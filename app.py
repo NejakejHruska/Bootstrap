@@ -10,5 +10,9 @@ def index():
 def flexbox():
     return render_template('flexbox.htm')
 
+@app.route('/flexbox2')
+def shop_flexbox():
+    return render_template('shop-flexbox.htm')
+
 if __name__ == '__main__':
     app.run(debug=True)
