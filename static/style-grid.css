@@ -1,0 +1,43 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.box {
+    background-color: cadetblue;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #111;
+    margin: 5px;
+}
+
+.box:nth-child(odd) {
+    background-color: seagreen;
+}
+
+.box:nth-child(1) {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.box:nth-child(2) {
+    grid-column: span 1;
+    grid-row: span 3;
+}
+
+.box:nth-child(3) {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.box:nth-child(7) {
+    grid-column: span 4;
+    grid-row: span 2;
+}
+
+.box:nth-child(8) {
+    grid-column: span 4;
+    grid-row: span 2;
+}

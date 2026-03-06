@@ -14,5 +14,13 @@ def flexbox():
 def shop_flexbox():
     return render_template('shop-flexbox.htm')
 
+@app.route('/grid')
+def grid():
+    return render_template('grid.htm')
+
+@app.route('/grid2')
+def grid_response():
+    return render_template('grid-response.htm')
+
 if __name__ == '__main__':
     app.run(debug=True)
