@@ -1,19 +1,66 @@
 header {
     grid-area: header;
+    background-color: lightseagreen;
 }
 
 nav {
     grid-area: nav;
+    background-color: lightcoral;
 }
 
 main {
     grid-area: main;
+    background-color: lawngreen;
 }
 
-aside {
-    grid-area: aside;
+#aside-1 {
+    grid-area: aside-1;
+    background-color: lightskyblue;
 }
+
+#aside-2 {
+    grid-area: aside-2;
+    background-color: skyblue;
+}
+
+#aside-3 {
+    grid-area: aside-3;
+    background-color: deepskyblue;
+}
+
+#box-1 {
+    grid-area: box-1;
+    background-color: lightgreen;
+}
+
+#box-2 {
+    grid-area: box-2;
+    background-color: green;
+}
+
+#box-3 {
+    grid-area: box-3;
+    background-color: darkgreen;
+}
+
+
 
 footer {
     grid-area: footer;
+    background-color: lightgray;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6 W A, 100px);
+
+    grid-template-areas: 
+        "header header header header header"
+        "nav main main main aside-1"
+        "nav main main main aside-2"
+        "nav main main main aside-3"
+        ". box-1 box-2 box-3 ."
+        "footer footer footer footer footer";
+    gap: 10px;
 }
