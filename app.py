@@ -22,5 +22,9 @@ def grid():
 def grid_response():
     return render_template('grid-response.htm')
 
+@app.route('/starter-grid')
+def grid_starter():
+    return render_template('starter-grid.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

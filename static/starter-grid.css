@@ -1,0 +1,93 @@
+.box{
+    border: 2px solid black;
+}
+
+.box1 {
+    grid-area: logo;
+    padding: 40px;
+    background-color: lightcoral;
+}
+
+.box2 {
+    grid-area: menu;
+    padding: 40px;
+    background-color: lightblue
+}
+
+.box3 {
+    grid-area: hero;
+    padding: 40px;
+    background-color: lightgreen;
+}
+
+.box4 {
+    grid-area: Karta-1;
+    padding: 40px;
+    background-color: lightpink;
+}
+
+.box5 {
+    grid-area: Karta-2;
+    padding: 40px;
+    background-color: aquamarine;
+}
+
+.box6 {
+    grid-area: Karta-3;
+    padding: 40px;
+    background-color: bisque;
+}
+
+.box7 {
+    grid-area: sidebar;
+    padding: 100px;
+    background-color: lightgrey;
+}
+
+.box8 {
+    grid-area: footer;
+    padding: 40px;
+    background-color: lightseagreen
+}
+
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 100px);
+
+    grid-template-areas: 
+        "logo menu menu menu"
+        "hero hero hero sidebar"
+        "Karta-1 Karta-2 Karta-3 sidebar"
+        "footer footer footer footer";
+    gap: 10px
+}
+
+@media (max-width: 768px) {
+
+    .box7 {
+        grid-area: sidebar;
+        padding: 40px;
+        background-color: lightgrey;
+    }
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 100px);
+
+        grid-template-areas:
+            "logo"
+            "menu"
+            "hero"
+            "Karta-1"
+            "Karta-2"
+            "Karta-3"
+            "sidebar"
+            "footer"
+    }
+}
