@@ -65,6 +65,27 @@ footer {
     gap: 10px;
 }
 
+.menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu a {
+    display:block;
+    text-decoration: none;
+    color: #222;
+    background-color: #cfe8ff;
+    padding: 14px 16px;
+    border-radius: 10px;
+    transition: 0.3s;   
+}
+
+.menu a:hover {
+    background-color: #9cc9f7;
+}
+
 @media (max-width: 768px) {
   
     .container {
