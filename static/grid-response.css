@@ -123,6 +123,18 @@ nav {
         gap: 0px;
     }
 
+    .products {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products.products {
+        gap: 0;
+    }
+    .card {
+        width: 100%;
+    }
+
     .menu {
         flex-direction: column;
         gap: 0px;
